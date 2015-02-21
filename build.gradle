@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "1.7.10-1.0"
+group= "com.dtendr.mysticalmyriad" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "MysticalMyriad"
 
 minecraft {
     version = "1.7.10-10.13.2.1291"
@@ -31,6 +31,9 @@ dependencies {
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
     //compile "some.group:artifact:version"
+
+    //Baubles
+    //compile 'com.
       
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
