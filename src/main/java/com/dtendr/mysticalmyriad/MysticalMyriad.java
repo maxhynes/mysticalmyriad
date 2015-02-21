@@ -1,19 +1,20 @@
 package com.dtendr.mysticalmyriad;
 
 import com.dtendr.mysticalmyriad.proxy.IProxy;
+import com.dtendr.mysticalmyriad.reference.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="MysticalMyriad", name="Mystical Myriad", version="1.7.10-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class MysticalMyriad
 {
-    @Mod.Instance("MysticalMyriad")
+    @Mod.Instance(Reference.MOD_ID)
     public static MysticalMyriad instance;
 
-    @SidedProxy(clientSide = "com.dtendr.mysticalmyriad.proxy.ClientProxy", serverSide = "com.dtendr.mysticalmyriad.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
