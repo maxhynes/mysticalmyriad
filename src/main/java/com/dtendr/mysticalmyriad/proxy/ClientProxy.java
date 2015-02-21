@@ -1,4 +1,5 @@
 package com.dtendr.mysticalmyriad.proxy;
 
-public class ClientProxy {
+public class ClientProxy extends CommonProxy
+{
 }

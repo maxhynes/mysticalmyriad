@@ -1,4 +1,5 @@
 package com.dtendr.mysticalmyriad.proxy;
 
-public interface IProxy {
+public interface IProxy
+{
 }
