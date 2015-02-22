@@ -1,6 +1,6 @@
 package com.dtendr.mysticalmyriad;
 
-import com.dtendr.mysticalmyriad.configuration.ConfigurationHandler;
+import com.dtendr.mysticalmyriad.handler.ConfigurationHandler;
 import com.dtendr.mysticalmyriad.proxy.IProxy;
 import com.dtendr.mysticalmyriad.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class MysticalMyriad
 {
     @Mod.Instance(Reference.MOD_ID)
