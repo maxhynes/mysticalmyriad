@@ -3,6 +3,8 @@ package com.dtendr.mysticalmyriad;
 import com.dtendr.mysticalmyriad.handler.ConfigurationHandler;
 import com.dtendr.mysticalmyriad.proxy.IProxy;
 import com.dtendr.mysticalmyriad.reference.Reference;
+import com.dtendr.mysticalmyriad.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -22,17 +24,13 @@ public class MysticalMyriad
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-
-    }
+    public void init(FMLInitializationEvent event) {LogHelper.info("Initialization Complete!");}
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-
-    }
+    public void postInit(FMLPostInitializationEvent event) {LogHelper.info("Post Initialization Complete!");}
 }
