@@ -1,5 +1,6 @@
 package com.dtendr.mysticalmyriad;
 
+import com.dtendr.mysticalmyriad.configuration.ConfigurationHandler;
 import com.dtendr.mysticalmyriad.proxy.IProxy;
 import com.dtendr.mysticalmyriad.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -20,7 +21,7 @@ public class MysticalMyriad
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
