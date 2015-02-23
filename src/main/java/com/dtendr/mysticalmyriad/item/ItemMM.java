@@ -9,7 +9,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class ItemMM extends Item {
-    public ItemMM() {
+    public ItemMM()
+    {
         super();
         this.maxStackSize = 1;
         this.setCreativeTab(CreativeTabs.tabAllSearch);
@@ -17,12 +18,14 @@ public class ItemMM extends Item {
     }
 
     @Override
-    public String getUnlocalizedName() {
+    public String getUnlocalizedName()
+    {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemStack) {
+    public String getUnlocalizedName(ItemStack itemStack)
+    {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() +  ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
