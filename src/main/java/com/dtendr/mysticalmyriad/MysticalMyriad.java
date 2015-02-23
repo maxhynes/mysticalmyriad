@@ -1,6 +1,7 @@
 package com.dtendr.mysticalmyriad;
 
 import com.dtendr.mysticalmyriad.handler.ConfigurationHandler;
+import com.dtendr.mysticalmyriad.init.ModItems;
 import com.dtendr.mysticalmyriad.proxy.IProxy;
 import com.dtendr.mysticalmyriad.reference.Reference;
 import com.dtendr.mysticalmyriad.utility.LogHelper;
@@ -26,6 +27,8 @@ public class MysticalMyriad
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
