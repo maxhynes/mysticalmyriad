@@ -1,10 +1,10 @@
 package com.dtendr.mysticalmyriad.item;
 
+import com.dtendr.mysticalmyriad.creativetab.CreativeTabMM;
 import com.dtendr.mysticalmyriad.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -13,7 +13,7 @@ public class ItemMM extends Item {
     {
         super();
         this.maxStackSize = 1;
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
+        this.setCreativeTab(CreativeTabMM.MM_TAB);
         this.setNoRepair();
     }
 

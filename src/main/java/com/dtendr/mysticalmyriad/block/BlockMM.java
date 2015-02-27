@@ -1,5 +1,6 @@
 package com.dtendr.mysticalmyriad.block;
 
+import com.dtendr.mysticalmyriad.creativetab.CreativeTabMM;
 import com.dtendr.mysticalmyriad.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,13 +14,13 @@ public class BlockMM extends Block
     public BlockMM(Material material)
     {
         super(material);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
+        this.setCreativeTab(CreativeTabMM.MM_TAB);
     }
 
     public BlockMM()
     {
         this(Material.rock);
-        this.setCreativeTab(CreativeTabs.tabAllSearch);
+        this.setCreativeTab(CreativeTabMM.MM_TAB);
     }
 
     @Override
