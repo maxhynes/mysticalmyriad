@@ -1,2 +1,12 @@
+itemGroup.mysticalmyriad=Mystical Myriad
+
+item.mysticalmyriad:myriadGrimore.name=Myriad Grimore
+item.mysticalmyriad:cromEye.name=Eye of Crom
 item.mysticalmyriad:leylineOculus.name=Leyline Oculus
+item.mysticalmyriad:manifoldGauntlets.name=Manifold Gauntlets
+item.mysticalmyriad:puzzleBox.name=Puzzle Box
+
+tile.mysticalmyriad:oghamStone.name=Ogham Stone
+tile.mysticalmyriad:spatialPylon.name=Spatial Pylon
+tile.mysticalmyriad:spatialManifold.name=Spatial Manifold
 tile.mysticalmyriad:cromScale.name=Crom Scale
